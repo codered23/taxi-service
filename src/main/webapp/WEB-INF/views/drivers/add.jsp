@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style>
-    <%@include file='/WEB-INF/views/css/table_dark.css' %>
+    <%@include file='/WEB-INF/views/css/style.css' %>
 </style>
 <html>
 <head>
@@ -35,7 +35,6 @@
             <input type="submit" name="add" form="driver">
         </td>
     </tr>
-    <h4><a href="${pageContext.request.contextPath}/login">Login</a></h4>
 </table>
 </body>
 </html>

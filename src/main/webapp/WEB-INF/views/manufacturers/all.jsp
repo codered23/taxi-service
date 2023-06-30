@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <style>
-    <%@include file='/WEB-INF/views/css/table_dark.css' %>
+    <%@include file='/WEB-INF/views/css/style.css' %>
 </style>
 <html>
 <head>
@@ -13,7 +13,8 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>License number</th>
+        <th>Country</th>
+        <th>Update</th>
         <th>Delete</th>
     </tr>
     <c:forEach var="manufacturer" items="${manufacturers}">
@@ -28,10 +29,18 @@
                 <c:out value="${manufacturer.country}"/>
             </td>
             <td>
+                <a href="${pageContext.request.contextPath}/manufacturers/update?id=${manufacturer.id}">UPDATE</a>
+            </td>
+            <td>
                 <a href="${pageContext.request.contextPath}/manufacturers/delete?id=${manufacturer.id}">DELETE</a>
             </td>
         </tr>
-    </c:forEach>
+            </c:forEach>
+    <tr>
+        <td colspan="7">
+            <a href="${pageContext.request.contextPath}/index">Main page</a>
+        </td>
+    </tr>
 </table>
 </body>
 </html>
