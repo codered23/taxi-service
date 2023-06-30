@@ -1,0 +1,32 @@
+.table_dark {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #fff;
+}
+
+.table_dark th,
+.table_dark td {
+    border: 1px solid #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.table_dark th {
+    background-color: #666;
+}
+
+.table_dark tr:nth-child(even) {
+    background-color: #555;
+}
+
+.table_dark a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.table_dark a:hover {
+    text-decoration: underline;
+}

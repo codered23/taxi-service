@@ -65,6 +65,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>updateDriver</servlet-name>
+        <servlet-class>taxi.controller.driver.UpdateDriverController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateDriver</servlet-name>
+        <url-pattern>/drivers/update</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>addDriver</servlet-name>
         <servlet-class>taxi.controller.driver.AddDriverController</servlet-class>
     </servlet>
@@ -110,12 +119,30 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>driverProfile</servlet-name>
+        <servlet-class>taxi.controller.driver.ProfileController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>driverProfile</servlet-name>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>deleteCar</servlet-name>
         <servlet-class>taxi.controller.car.DeleteCarController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>deleteCar</servlet-name>
         <url-pattern>/cars/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateCar</servlet-name>
+        <servlet-class>taxi.controller.car.UpdateCarController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateCar</servlet-name>
+        <url-pattern>/cars/update</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -143,5 +170,14 @@
     <servlet-mapping>
         <servlet-name>deleteManufacturer</servlet-name>
         <url-pattern>/manufacturers/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateManufacturer</servlet-name>
+        <servlet-class>taxi.controller.manufacturer.UpdateManufacturerController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateManufacturer</servlet-name>
+        <url-pattern>/manufacturers/update</url-pattern>
     </servlet-mapping>
 </web-app>
